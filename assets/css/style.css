@@ -124,3 +124,63 @@ header nav ul li a:hover {
   margin: 10px auto 20px auto;
   width: 90%;
 }
+
+/* begin projects section styles */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: var(--tertiary-color);
+}
+
+.project-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: var(--tertiary-color);
+  width: 100%;
+}
+
+.project {
+  position: relative;
+  width: 95%;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.project img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-position: left top;
+  filter: grayscale(70%);
+  border: 3px solid var(--secondary-color);
+}
+
+.project img:hover {
+  filter: none;
+}
+
+.project-info {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  background-color: var(--secondary-color);
+  padding: 5px 10px;
+}
+
+.project-info h4 {
+  font-size: 24px;
+  color: var(--primary-color);
+}
+
+.project-info p {
+  font-size: 16px;
+  color: var(--primary-color);
+}
+
+.project:nth-child(1) {
+  height: 300px;
+}
