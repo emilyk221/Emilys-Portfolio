@@ -73,18 +73,20 @@ header nav ul li a:hover {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  align-items: flex-end;
+  align-items: center;
   background-origin: border-box;
   background-position: center;
   padding: 0 25px 25px;
-  height: 350px;
+  height: 390px;
 }
 
 .hero h2 {
   background-color: var(--secondary-color);
-  align-self: flex-end;
+  text-align: center;
   padding: 10px;
-  font-size: 28px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  width: 85%;
 }
 
 .hero img {
@@ -224,20 +226,20 @@ header nav ul li a:hover {
   header nav ul {
     justify-content: space-evenly;
   }
-
-  .hero {
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 20px;
-  }
-
-  .hero h2 {
-    margin-bottom: 20px;
-  }
 }
 
 /* Media queries for tablets and small desktops and larger*/
 @media screen and (min-width: 768px) {
+  .hero {
+    justify-content: space-between;
+    height: 350px;
+  }
+
+  .hero h2 {
+    width: 50%;
+    align-self: flex-end;
+  }
+
   .project {
     width: 46%;
     margin: 0 10px 20px;
