@@ -4,6 +4,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Emily's Portfolio</title>
 </head>
@@ -18,7 +25,7 @@
         <li><a href="#about-me">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact-me">Contact Me</a></li>
-        <li><a href="https://docs.google.com/document/d/1Yj0CV6gNEvsLB5XJMtWBipWsrdY3IxomLg6VOZsFGLU/edit?usp=sharing" target="_blank">Resume</a></li>
+        <li><a href="./assets/images/Emily-Kruse-Resume.pdf" target="_blank">Resume</a></li>
       </ul>
     </nav>
   </header>
@@ -45,50 +52,45 @@
   <!--projects section-->
   <section id="projects" class="projects">
     <h3 class="section-title">Projects</h3>
-    <div class="project-box">
-      <div class="project">
-        <a href="https://emilyk221.github.io/weather-dashboard/" target="_blank">
-          <img src="./assets/images/weather-dashboard-img.png" alt="Webpage showing a search form to input a city, a list of previously searched cities, and current and forecasted weather for Columbus, OH." />
-        </a>
-        <div class="project-info">
-          <h4>Weather Dashboard</h4>
-          <p>JavaScript/CSS/HTML</p>
+    <div class="row project-box">
+      <div class="col-12 col-lg-6">
+        <div class="card project text-center">
+          <img class="card-img-top" src="./assets/images/Coding-Compass.png" alt="Webpage with a purple and yellow header and brief information about six bootcamps, including location, a rating using a 5-star scale, and a link to learn more">
+          <div class="card-body">
+            <h5 class="card-title">Coding Compass</h5>
+            <p class="card-text">Full stack app using Javascript, Node, Express, MySQL, Sequelize, Bootstrap, and Handlebars</p>
+            <a href="https://coding-compass.herokuapp.com/" target="_blank" class="btn btn-primary">Visit site</a>
+          </div>
         </div>
       </div>
-      <div class="project">
-        <a href="https://awgarner.github.io/dogAdoptionFinder/" target="_blank">
-          <img src="./assets/images/dog-adoption-finder-img2.png" alt="Dog Adoption Finder homepage with adorable pictures of dogs and a form to select criteria for the dog being sought." />
-        </a>
-        <div class="project-info">
-          <h4>Dog Adoption Finder</h4>
-          <p>Javascript/HTML/CSS</p>
+      <div class="col-12 col-lg-6">
+        <div class="card project text-center">
+          <img class="card-img-top" src="./assets/images/Tech-Blog.png" alt="Webpage dispaying a large title reading 'The Tech Blog' with a nav bar above and a post about object relational mapping below">
+          <div class="card-body">
+            <h5 class="card-title">The Tech Blog</h5>
+            <p class="card-text">Full stack app using Javascript, Node, Express, MySQL, Sequelize, and Handlebars</p>
+            <a href="https://young-falls-35521.herokuapp.com/" target="_blank" class="btn btn-primary">Visit site</a>
+          </div>
         </div>
       </div>
-      <div class="project">
-        <a href="https://emilyk221.github.io/Work-Day-Scheduler/">
-          <img src="./assets/images/day-scheduler-img.png" alt="Gray, red, and green text blocks labelled with the hour and blue save buttons." />
-        </a>
-        <div class="project-info">
-          <h4>Work Day Scheduler</h4>
-          <p>JavaScript/HTML/CSS</p>
+      <div class="col-12 col-lg-6">
+        <div class="card project text-center">
+          <img class="card-img-top" src="./assets/images/weather-dashboard-img.png" alt="Webpage showing a search form to input a city, a list of previously searched cities, and current and forecasted weather for Columbus, OH">
+          <div class="card-body">
+            <h5 class="card-title">Weather Dashboard</h5>
+            <p class="card-text">Front end app using Javascript, CSS, and HTML</p>
+            <a href="https://emilyk221.github.io/weather-dashboard/" target="_blank" class="btn btn-primary">Visit site</a>
+          </div>
         </div>
       </div>
-      <div class="project">
-        <a href="https://emilyk221.github.io/01-Horiseon/" target="_blank">
-          <img src="./assets/images/Horiseon-img.png" alt="A dark blue header that says 'Horiseon' and an image of the top of a man's head from an SEO website" />
-        </a>
-        <div class="project-info">
-          <h4>Horiseon</h4>
-          <p>HTML/CSS</p>
-        </div>
-      </div>
-      <div class="project">
-        <a href="https://emilyk221.github.io/run-buddy">
-          <img src="./assets/images/run-buddy-img.png" alt="Yellow and green background with a title reading 'Run Buddy'." />
-        </a>
-        <div class="project-info">
-          <h4>Run Buddy</h4>
-          <p>HTML/CSS</p>
+      <div class="col-12 col-lg-6">
+        <div class="card project text-center">
+          <img class="card-img-top" src="./assets/images/day-scheduler-img.png" alt="Gray, red, and green text blocks labelled with the hour and blue save buttons">
+          <div class="card-body">
+            <h5 class="card-title">Work Day Scheduler</h5>
+            <p class="card-text">Front end app using Javascript and HTML</p>
+            <a href="https://emilyk221.github.io/Work-Day-Scheduler/" target="_blank" class="btn btn-primary">Visit site</a>
+          </div>
         </div>
       </div>
     </div>
@@ -98,10 +100,10 @@
   <section id="contact-me" class="contact">
     <h3 class="section-title">Contact Me</h3>
     <div class="contact-links">
-      <!-- <a href="tel:555.555.5555">555.555.5555</a><br /> -->
-      <a href="mailto:emily.g.kruse@gmail.com">emily.g.kruse@gmail.com</a><br />
-      <a href="https://github.com/emilyk221">GitHub</a><br />
-      <a href="https://www.linkedin.com/in/emily-kruse-45b22322b/">LinkedIn</a><br />
+      <a href="tel:979.229.0519"><i class="fa-solid fa-phone icon"></i> 979.229.0519</a>
+      <a href="mailto:emily.g.kruse@gmail.com"><i class="fa-solid fa-envelope"></i> emily.g.kruse@gmail.com</a>
+      <a href="https://github.com/emilyk221"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://www.linkedin.com/in/emily-kruse-45b22322b/"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
     </div>
   </section>
 </body>

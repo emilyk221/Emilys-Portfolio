@@ -1,5 +1,5 @@
 :root {
-  --primary-color: #373f51;
+  --primary-color: #12192a;;
   --secondary-color: #7bbb9b;
   --tertiary-color: #ecf0f1;
 }
@@ -13,6 +13,7 @@
 body {
   font-family: Helvetica, Arial, sans-serif;
   color: var(--primary-color);
+  background-color: var(--tertiary-color);
 }
 
 /* begin header styles */
@@ -31,6 +32,7 @@ header h1 {
   padding: 10px 0;
   width: 100%;
   text-align: center;
+  border-radius: 8px;
 }
 
 header h1 a {
@@ -63,6 +65,7 @@ header nav ul li a {
 header nav ul li a:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  border-radius: 4px;
 }
 /* end header styles */
 
@@ -87,6 +90,7 @@ header nav ul li a:hover {
   font-size: 24px;
   margin-bottom: 15px;
   width: 85%;
+  border-radius: 8px;
 }
 
 .hero img {
@@ -143,14 +147,20 @@ header nav ul li a:hover {
   width: 100%;
 }
 
+.btn-primary {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-color);
+}
+
 .project {
-  position: relative;
+  /* position: relative;
   width: 95%;
-  height: 100px;
+  height: 100px; */
   margin-bottom: 20px;
 }
 
-.project img {
+/* .project img {
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -162,9 +172,9 @@ header nav ul li a:hover {
 
 .project img:hover {
   filter: none;
-}
+} */
 
-.project-info {
+/* .project-info {
   position: absolute;
   bottom: 10px;
   left: 0;
@@ -184,7 +194,7 @@ header nav ul li a:hover {
 
 .project:nth-child(1) {
   height: 300px;
-}
+} */
 /* end projects section styles */
 
 /* begin contact section styles */
@@ -214,6 +224,7 @@ header nav ul li a:hover {
 .contact a:hover {
   background-color: var(--primary-color);
   color: var(--secondary-color);
+  border-radius: 5px;
 }
 /* end contact section styles */
 
@@ -240,14 +251,14 @@ header nav ul li a:hover {
     align-self: flex-end;
   }
 
-  .project {
+  /* .project {
     width: 46%;
     margin: 0 10px 20px;
   }
 
   .project:nth-child(1) {
     width: 95%;
-  }
+  } */
 
   .section-title {
     width: 70%;
@@ -266,6 +277,8 @@ header nav ul li a:hover {
     width: auto;
     padding: 10px 20px 10px 60px;
     margin: 20px 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   header nav {
