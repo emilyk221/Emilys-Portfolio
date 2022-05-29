@@ -39,6 +39,10 @@ header h1 a {
   color: var(--primary-color);
 }
 
+header h1 a:hover {
+  color: var(--primary-color);
+}
+
 header a {
   text-decoration: none;
 }
@@ -151,6 +155,11 @@ header nav ul li a:hover {
   color: var(--primary-color);
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .project {
